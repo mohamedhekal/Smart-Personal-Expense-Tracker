@@ -1,0 +1,133 @@
+.freelance-page {
+    padding: 0;
+}
+
+.revenue-card {
+    margin-bottom: 1.5rem;
+}
+
+.revenue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.revenue-client {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.revenue-project {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.revenue-amounts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.amount-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.amount-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.amount-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.amount-value.success {
+    color: var(--success);
+}
+
+.amount-value.danger {
+    color: var(--danger);
+}
+
+.revenue-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.revenue-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.revenue-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.payments-list {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--border);
+}
+
+.payments-header {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.payment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.payment-type {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.payment-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .revenue-amounts {
+        grid-template-columns: 1fr;
+    }
+
+    .revenue-actions {
+        flex-direction: column;
+    }
+
+    .revenue-actions button {
+        width: 100%;
+    }
+}

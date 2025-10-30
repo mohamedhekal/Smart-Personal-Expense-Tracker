@@ -1,0 +1,250 @@
+.gold-page {
+    padding: 0;
+}
+
+.gold-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.summary-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+.summary-content {
+    flex: 1;
+}
+
+.summary-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.summary-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.summary-value.profit {
+    color: var(--success);
+}
+
+.summary-value.loss {
+    color: var(--danger);
+}
+
+.gold-purchases-list h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-light);
+}
+
+.empty-state svg {
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.purchase-card {
+    margin-bottom: 1rem;
+}
+
+.purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.purchase-info {
+    flex: 1;
+}
+
+.purchase-type-purity {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.purchase-date {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.purchase-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.purchase-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.detail-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.detail-value.profit {
+    color: var(--success);
+}
+
+.detail-value.loss {
+    color: var(--danger);
+}
+
+.sales-list {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.sales-header {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.sale-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+}
+
+.sale-info {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.sale-profit {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.sale-profit.profit {
+    color: var(--success);
+}
+
+.sale-profit.loss {
+    color: var(--danger);
+}
+
+.btn-icon-small {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-icon-small:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.purchase-info-alert {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.purchase-info-alert strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #f59e0b;
+}
+
+.purchase-info-alert div {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .gold-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-details {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .purchase-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .sale-info {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}

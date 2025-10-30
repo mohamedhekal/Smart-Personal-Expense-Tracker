@@ -1,0 +1,326 @@
+.certificates-page {
+    padding: 0;
+}
+
+.certificate-card {
+    margin-bottom: 1.5rem;
+}
+
+.certificate-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.certificate-bank {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.certificate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.detail-value {
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.certificate-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.summary-item span:first-child {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.summary-item .amount {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.summary-item .amount.success {
+    color: var(--success);
+}
+
+.summary-item .amount.danger {
+    color: var(--danger);
+}
+
+.withdrawals-list {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--border);
+}
+
+.withdrawals-header {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.withdrawal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.withdrawal-item.repaid {
+    opacity: 0.7;
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.repaid-note {
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+    opacity: 0.8;
+}
+
+.form-help.error {
+    color: var(--danger);
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.withdrawal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.withdrawal-info span:first-child {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.withdrawal-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.withdrawal-repayment {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.days-left {
+    padding: 0.25rem 0.5rem;
+    background: var(--warning);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.certificate-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.alert-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(245, 158, 11, 0.1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: var(--warning);
+}
+
+.bank-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.certificate-name {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.detail-value.large {
+    font-size: 1.1rem;
+}
+
+.detail-value.success {
+    color: var(--success);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.detail-value.warning {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.danger-alert {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+    border: 2px solid var(--danger);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.danger-alert svg {
+    color: var(--danger);
+    flex-shrink: 0;
+}
+
+.danger-alert strong {
+    display: block;
+    color: var(--danger);
+    margin-bottom: 0.25rem;
+}
+
+.danger-alert p {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.withdrawals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.danger-count {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--danger);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.withdrawal-item.dangerous {
+    border: 2px solid var(--danger);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(220, 38, 38, 0.05) 100%);
+}
+
+.withdrawal-item.installment {
+    border-left: 4px solid var(--secondary);
+}
+
+.withdrawal-amount {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.days-left.danger {
+    background: var(--danger);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.installment-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background: var(--secondary);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.installment-info {
+    font-size: 0.875rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.badge-danger {
+    background: var(--danger);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .certificate-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .withdrawal-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .certificate-actions {
+        flex-direction: column;
+    }
+
+    .certificate-actions button {
+        width: 100%;
+    }
+
+    .withdrawals-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}

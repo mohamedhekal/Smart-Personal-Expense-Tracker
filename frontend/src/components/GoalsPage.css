@@ -1,0 +1,138 @@
+.goals-page {
+    padding: 0;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.goal-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.goal-card.completed {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border: 2px solid var(--success);
+}
+
+.goal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.goal-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(99, 102, 241, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.goal-card.completed .goal-icon {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--success);
+}
+
+.goal-info {
+    flex: 1;
+}
+
+.goal-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.goal-amounts {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.goal-current {
+    font-weight: 700;
+    color: var(--success);
+}
+
+.goal-separator {
+    color: var(--text-light);
+}
+
+.goal-target {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.goal-progress {
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: var(--bg);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient);
+    transition: width 0.3s ease;
+    border-radius: 6px;
+}
+
+.goal-card.completed .progress-fill {
+    background: var(--success);
+}
+
+.progress-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.goal-deadline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+}
+
+.goal-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .goal-actions {
+        flex-direction: column;
+    }
+
+    .goal-actions button {
+        width: 100%;
+    }
+}
