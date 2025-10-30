@@ -13,7 +13,7 @@ A personal finance management app with a Laravel backend and a Vite + React fron
 
 ### Project Structure
 ```
-msarefy-ios-app/
+msarefy--app/
   backend/   # Laravel API (PHP)
   frontend/  # React (Vite) web app
 ```
@@ -92,7 +92,7 @@ Frontend will start on the printed Vite dev URL (usually `http://127.0.0.1:5173`
 
 ### هيكل المشروع
 ```
-msarefy-ios-app/
+msarefy--app/
   backend/   # واجهة برمجة Laravel
   frontend/  # واجهة React (Vite)
 ```
